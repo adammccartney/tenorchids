@@ -18,6 +18,23 @@ placeholderMu = {r1 * 6}
 "t9" = ^\markup{ \large { \bold { "6'59\"" } }}
 "t10" = ^\markup{ \large { \bold { "7'41\"" } }}
 
+
+%%
+%% Registration
+%%
+"r1_org"=^\markup{\center-column{\box{\bold{\line{\large{\bold{Fletn}}}}}}}
+"r2_org"=^\markup{\center-column{\box{\bold{\line{\bold{Fletn}}\line{\bold{Oktav}}}}}}
+"r3_org"=^\markup{\center-column{\box{\bold{\line{\bold{Oktav}}\line{\bold{Principal}}}}}}
+"r4_org"=^\markup{\center-column{\box{\bold{\line{\bold{Mixtur}}}}}}
+"r5_org"=^\markup{\center-column{\box{\bold{\line{\bold{Principal}}\line{\bold{Quint}}}}}}
+
+
+"r1_elec"=^\markup{\center-column{\box{\large{\line{\large{2}}}}}}
+"r2_elec"=^\markup{\center-column{\box{\large{\line{\large{2}}\line{\large{4}}}}}}
+"r3_elec"=^\markup{\center-column{\box{\large{\line{\large{4}}\line{\large{3}}}}}}
+"r4_elec"=^\markup{\center-column{\box{\large{\line{\large{6}}}}}}
+"r5_elec"=^\markup{\center-column{\box{\large{\line{\large{3}}\line{\large{5}}}}}}
+
 %% Dynamics & notes
 
 glissInstruct = ^\markup{ "glissando by slowly inflating & deflating bellows" }
@@ -27,15 +44,15 @@ melInstruct = ^\markup{ "allow for dynamics of the bellows" }
 %%% Synth
 %%%%%%%%%%%%
 
-"sy1right" = { r1*2\< <e'' g'' a''>1:32\arpeggio\fermata\> r1*2\!\"t1" }
+"sy1right" = { r1*2\<\"r1_elec" <e'' g'' a''>1:32\arpeggio\fermata\> r1*2\!\"t1" }
 "sy2right" = { r1*2\< <e'' g'' a''>1:32\arpeggio\fermata\> r1*2\!\"t2" }
-"sy3right" = { r1*2\< <ef'' gf'' a''>1:32\arpeggio\fermata\> r1*2\!\"t3" }
+"sy3right" = { r1*2\<\"r2_elec" <ef'' gf'' a''>1:32\arpeggio\fermata\> r1*2\!\"t3" }
 "sy4right" = { r1*2\< <ef'' gf'' a''>1:32\arpeggio\fermata\> r1*2\!\"t4" }
-"sy5right" = { r1*2\< <df'' f'' a''>1:32\arpeggio\fermata\> r1*2\!\"t5" }
+"sy5right" = { r1*2\< \"r3_elec"<df'' f'' a''>1:32\arpeggio\fermata\> r1*2\!\"t5" }
 "sy6right" = { r1*2\< <df'' f'' a''>1:32\arpeggio\fermata\> r1*2\!\"t6" }
-"sy7right" = { r1*2\< <df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t7" }
+"sy7right" = { r1*2\< \"r4_elec"<df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t7" }
 "sy8right" = { r1*2\< <df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t8" }
-"sy9right" = { r1*2\< <df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t9" }
+"sy9right" = { r1*2\< \"r5_elec"<df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t9" }
 "sy10right" = { r1*2\< <df'' gf'' bf''>1:32\arpeggio\fermata\> r1*2\!\"t10" }
 
 syRightMus = {
@@ -105,9 +122,10 @@ melody = { bf''4 a''2 g''2. fs''1 ~ fs''4 ef''\breve d''1 ~ d''4 c''2. bf'2 a'4 
 
 %% rest frames
 % [33, 38, 9, 27]
-cRight = { r1 * 5
+cRight = { 
+           r1 * 5
            \break
-           r1\melInstruct
+           r1\melInstruct 
            r1 * 2
            r4
            \melody
@@ -125,15 +143,15 @@ cRight = { r1 * 5
            r1
          }
 
-"c1left" = { r1*2\<\glissInstruct <e'' g'' a''>1\fermata\>\> r1*2\! }
+"c1left" = { r1*2\<\glissInstruct\"r1_org" <e'' g'' a''>1\fermata\>\> r1*2\! }
 "c2left" = { r1*2\< <e'' g'' a''>1\fermata\>\> r1*2\! }
-"c3left" = { r1*2\< <ef'' gf'' a''>1\fermata\> r1*2\! }
+"c3left" = { r1*2\<\"r2_org" <ef'' gf'' a''>1\fermata\> r1*2\! }
 "c4left" = { r1*2\< <ef'' gf'' a''>1\fermata\> r1*2\! }
-"c5left" = { r1*2\< <df'' f'' a''>1\fermata\> r1*2\! }
+"c5left" = { r1*2\<\"r3_org" <df'' f'' a''>1\fermata\> r1*2\! }
 "c6left" = { r1*2\< <df'' f'' a''>1\fermata\> r1*2\! }
-"c7left" = { r1*2\< <df'' gf'' bf''>1\fermata\> r1*2\! }
+"c7left" = { r1*2\<\"r4_org" <df'' gf'' bf''>1\fermata\> r1*2\! }
 "c8left" = { r1*2\< <df'' gf'' bf''>1\fermata\> r1*2\! }
-"c9left" = { r1*2\< <df'' gf'' bf''>1\fermata\> r1*2\! }
+"c9left" = { r1*2\<\"r5_org" <df'' gf'' bf''>1\fermata\> r1*2\! }
 "c10left" = { r1*2\< <df'' gf'' bf''>1\fermata\> r1*2\! }
 
 leftMus = {

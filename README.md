@@ -61,18 +61,15 @@ the following points should be applied:
    it means automating a slow crescendo to the middle of the clip, immediately
    followed by a decrescendo to the end.
 
-2. The sound should be spatialized according to three stereo pairs. Please see
-   the file `spatialLayout.pdf` for a visual discription of one possible
-   layout. The specifics of the layout are not the most important aspect, more
-   important is that the pairs can play a copy of the audio stems and are
-   running filters according to the following specification: 
-   * __pair A__ should run through a lowpass filter whose cutoff frequency is
-     set to 220Hz
-   * __pair B__ should runthrough a bandpass filter that passes the frequencies
-     in the range 146.83Hz - 1318.15Hz
-   * __pair C__ should run through a highpass filter whose cutoff frequeny is
-     set to 880Hz
+2. The electronics setup assume a hexaphonic loudspeaker array 
+   * __speaker 1__ Lowpass filter, cutoff: 75 Hz
+   * __speaker 2__ Lowpass filter, cutoff: 220Hz
+   * __speaker 3__ bandpass filter, range 146.83Hz - 660Hz
+   * __speaker 4__ bandpass filter, range 660Hz - 1318.15Hz
+   * __speaker 5__ highpass cutoff @ 1660Hz
+   * __speaker 6__ highpass cutoff @ 3200Hz
 
 
-3. It should be possible to control each of the stereo pairs independently on
-   mixing desk sliders.
+3. It should be possible to control each of the speakers independently on
+   mixing desk sliders. The score indicates which speakers are in use at any
+   given time.
