@@ -31,7 +31,7 @@ placeholderMu = {r1 * 6}
 
 "r1_elec"=^\markup{\center-column{\box{\large{\line{\large{2}}}}}}
 "r2_elec"=^\markup{\center-column{\box{\large{\line{\large{2}}\line{\large{4}}}}}}
-"r3_elec"=^\markup{\center-column{\box{\large{\line{\large{4}}\line{\large{3}}}}}}
+"r3_elec"=^\markup{\center-column{\box{\large{\line{\large{1}}\line{\large{4}}\line{\large{3}}}}}}
 "r4_elec"=^\markup{\center-column{\box{\large{\line{\large{6}}}}}}
 "r5_elec"=^\markup{\center-column{\box{\large{\line{\large{3}}\line{\large{5}}}}}}
 

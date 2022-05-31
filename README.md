@@ -5,6 +5,8 @@ Ten Orchids is a piece for organ and electronics, composed in May 2022 for the
 organ at Leechkirche, Graz. The score consists of two simple parts, essentially
 a series of ten chords that are doubled on the synthesizer and on the organ. 
 
+This release version 1.2 contains more precise info on how to color the piece with organ registers and an electronic filterbank.
+
 
 ## Build the score and notes for electronics
 
